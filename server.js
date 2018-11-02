@@ -15,8 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Routes
-require("./app/routing/apiRoutes");//(app); // restore when routes are filled in
-require("./app/routing/htmlRoutes");//(app); // restore when routes are filled in
+require("./app/routing/apiRoutes")(app); // restore when routes are filled in
+require("./app/routing/htmlRoutes")(app); // restore when routes are filled in
 
 // Listener
 app.listen(PORT, function() {
