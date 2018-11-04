@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center">
+        <span class="fa fa-music"></span> Jam Buddy Finder</h1>
+      <hr>
+      <h2 class="text-center">Take the Survey</h2>
+      <br>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Reservation Page -->
+        <div class="card">
+          <div class="card-header">
+            Musician Profile
+          </div>
+          <div class="card-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="photo">Photo Link</label>
+                <input type="text" class="form-control" id="photo">
+              </div>
+              <div class="form-group">
+                <label for="primary">Primary Instrument</label>
+                <input type="text" class="form-control" id="primary">
+              </div>
+              <div class="form-group">
+                <label for="secondary">Secondary Instrument 1</label>
+                <input type="text" class="form-control" id="secondary">
+              </div>
+              <div class="form-group">
+                <label for="tertiary">Primary Instrument 2</label>
+                <input type="text" class="form-control" id="tertiary">
+              </div>
+              <!-- Survey Questions -->
+              <h4><strong>Questions</strong></h4>
+              <!-- Question 1 -->
+              <p>I enjoy playing a variety of styles and genres.</p>
+              <select class="form-control" id="q1">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> <br>
+
+              <!-- Question 2 -->
+              <p>I gravitate toward extreme subgenres of music (e.g. Metal/Punk, Hard Bop, Dubstep.</p>
+              <select class="form-control" id="q2">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> <br>
+
+              <!-- Question 3 -->
+              <p>Improvisation is an important part of musical discovery.</p>
+              <select class="form-control" id="q3">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> <br>
+
+              <!-- Question 4 -->
+              <p>I have mastered one or more of the instruments I play.</p>
+              <select class="form-control" id="q4">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> <br>
+
+              <!-- Question 5 -->
+              <p>Musicians must be proficient at reading scores / charts to effectively communicate musical ideas.</p>
+              <select class="form-control" id="q5">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> <br>
+
+              <!-- Question 6 -->
+              <p>You have to be very good at music in order to enjoy making music.</p>
+              <select class="form-control" id="q6">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> <br>
+
+              <!-- Question 7 -->
+              <p>My goal is to make something the will be performance-ready and play it professionally for audiences.</p>
+              <select class="form-control" id="q7">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> <br>
+
+              <!-- Question 8 -->
+              <p>Any music I create should be new and original.</p>
+              <select class="form-control" id="q8">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> <br>
+
+              <!-- Question 9 -->
+              <p>I will probably be the leader in any musical ensemble I take part in.</p>
+              <select class="form-control" id="q9">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> <br>
+
+              <!-- Question 10 -->
+              <p>Rehearals will take place at least three nights a week and on any Saturday or Sunday when there is not
+                a gig.</p>
+              <select class="form-control" id="q10">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> <br>
+              <button type="submit" class="btn btn-primary submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="/api/friends">API Friends Link</a> | <a target="_blank" href="https://github.com/dbstocker/Friend-Finder">Github
+            Repository</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
+
+<!-- Logic -->
+<script type="text/javascript">
+
+  // Click handler for when form is submitted
+  $(".submit").on("click", function (event) {
+    event.preventDefault();
+
+    // Get the form data
+    var newFriend = {
+      name: $('#name').val().trim(),
+      photo: $('#photo').val().trim(),
+      primary: $('#primary').val().trim(),
+      secondary: $('#secondary').val().trim(),
+      tertiary: $('#tertiary').val().trim(),
+      scores: [
+        $('#q1').val().trim(),
+        $('#q2').val().trim(),
+        $('#q3').val().trim(),
+        $('#q4').val().trim(),
+        $('#q5').val().trim(),
+        $('#q6').val().trim(),
+        $('#q7').val().trim(),
+        $('#q8').val().trim(),
+        $('#q9').val().trim(),
+        $('#q10').val().trim()
+      ]
+    };
+
+    console.log(newFriend);
+
+    // Send form data to api/friends
+    $.post("/api/friends", newFriend,
+      function (data) {
+
+        // Alert user that form has been submitted
+        if (data) {
+          alert("Thank you for submitting your profile");
+        }
+
+        // Clear the form when submitting
+        $('#name').val("");
+        $('#photo').val("");
+        $('#primary').val("");
+        $('#secondary').val("");
+        $('#tertiary').val("");
+        $('#q1').val("");
+        $('#q2').val("");
+        $('#q3').val("");
+        $('#q4').val("");
+        $('#q5').val("");
+        $('#q6').val("");
+        $('#q7').val("");
+        $('#q8').val("");
+        $('#q9').val("");
+        $('#q10').val("");
+
+      });
+
+  });
+
+</script>
