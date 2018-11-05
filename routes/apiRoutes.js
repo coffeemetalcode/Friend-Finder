@@ -36,9 +36,9 @@ module.exports = function(app) {
           best.primary = friendsData[i].primary;
           best.secondary = friendsData[i].secondary;
           best.tertiary = friendsData[i].tertiary;
-          console.log("Current best match: " + best.name);
         }
       }
+      console.log("Current best match: " + best.name);
     }
 
     friendsData.push(req.body);
