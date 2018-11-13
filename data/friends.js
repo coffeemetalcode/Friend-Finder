@@ -15,6 +15,14 @@ var friendsArray = [
     secondary: "Keys",
     tertiary: "",
     scores: ["5", "1", "4", "4", "5", "1", "2", "5", "4", "1"]
+  },
+  {
+    name: "Jess Tester",
+    photo: "test.png",
+    primary: "Test",
+    secondary: "Test",
+    tertiary: "Test",
+    scores: ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"]
   }
 ];
 

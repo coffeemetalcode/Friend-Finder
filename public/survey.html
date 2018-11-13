@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Survey</title>
+  <title>Jam Buddy Survey</title>
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -50,7 +50,7 @@
                 <input type="text" class="form-control" id="secondary">
               </div>
               <div class="form-group">
-                <label for="tertiary">Primary Instrument 2</label>
+                <label for="tertiary">Secondary Instrument 2</label>
                 <input type="text" class="form-control" id="tertiary">
               </div>
               <!-- Survey Questions -->
@@ -196,7 +196,7 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-6 ml-auto">
-                        <img id="best-photo">
+                        <img id="best-photo" src="http://placehold.jp/150x150.png" alt="">
                       </div>
                       <div class="col-sm-6 ml-auto">
                         <p id="best-primary"></p>
@@ -257,7 +257,7 @@
       ]
     };
 
-    console.log(newFriend);
+    console.log("survey.html New Friend: " + newFriend.name);
 
     // Send form data to api/friends
     $.post("/api/friends", newFriend,
@@ -285,19 +285,22 @@
         $('#q9').val("");
         $('#q10').val("");
 
-        var currentURL = window.location.origin;
-        $.post(currentURL + "/api/friends", newFriend, function (data) {
-          console.log("Data: " + data);
-          $('best-photo').html(data.photo);
-          $('#best-name').text(data.name);
-          $('#best-primary').text(data.primary);
-          $('#best-secondary').text(data.secondary);
-          $('#best-tertiary').text(data.tertiary);
-          $("#best-modal").modal('toggle');
-
-        });
-
+        
       });
+    // AJAX post the data to the friends API.
+    $.post("/api/friends", newFriend, function (data) {
+
+      // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+      $("#best-name").text(data.name);
+      $("#best-img").attr("src", data.photo);
+      $("#best-primary").text(data.primary);
+      $("#best-secondary").text(data.secondary);
+      $("#best-tertiary").text(data.tertiary);
+
+      // Show the modal with the best match
+      $("#best-modal").modal("toggle");
+
+    });
   });
 
 </script>
